@@ -8,16 +8,25 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Wangjian&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一篇文章,折腾了两天终于搭建成功">
+  <meta name="description" content="搭建angular+require搭建路由步骤         1、新建一个webapp的文件夹，在其下面建好对应的文件夹，如lib、app.js、main.js、route.js 各个页面文件.入口主页面index.html。
+2、准备好angular和require以及所需的插件源文件，存放到lib目录 下面
+
+3、开始编写index.html，采用标准的html5规范，导入应用需用的样式文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Wangjian's blog">
-<meta property="og:url" content="http://yoursite.com/2016/12/29/搭建成功/index.html">
+<meta property="og:url" content="http://yoursite.com/2016/12/29/angular+reuire搭建路由/index.html">
 <meta property="og:site_name" content="Wangjian's blog">
-<meta property="og:description" content="第一篇文章,折腾了两天终于搭建成功">
-<meta property="og:updated_time" content="2016-12-29T09:19:55.970Z">
+<meta property="og:description" content="搭建angular+require搭建路由步骤         1、新建一个webapp的文件夹，在其下面建好对应的文件夹，如lib、app.js、main.js、route.js 各个页面文件.入口主页面index.html。
+2、准备好angular和require以及所需的插件源文件，存放到lib目录 下面
+
+3、开始编写index.html，采用标准的html5规范，导入应用需用的样式文件">
+<meta property="og:updated_time" content="2016-12-29T10:21:17.560Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wangjian's blog">
-<meta name="twitter:description" content="第一篇文章,折腾了两天终于搭建成功">
+<meta name="twitter:description" content="搭建angular+require搭建路由步骤         1、新建一个webapp的文件夹，在其下面建好对应的文件夹，如lib、app.js、main.js、route.js 各个页面文件.入口主页面index.html。
+2、准备好angular和require以及所需的插件源文件，存放到lib目录 下面
+
+3、开始编写index.html，采用标准的html5规范，导入应用需用的样式文件">
   
     <link rel="alternative" href="/atom.xml" title="Wangjian&#39;s blog" type="application/atom+xml">
   
@@ -149,13 +158,24 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-搭建成功" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-angular+reuire搭建路由" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>第一篇文章,折腾了两天终于搭建成功</p>
+        <p>搭建angular+require搭建路由步骤<br>         1、新建一个webapp的文件夹，在其下面建好对应的文件夹，如lib、app.js、main.js、route.js 各个页面文件.入口主页面index.html。</p>
+<pre><code>2、准备好angular和require以及所需的插件源文件，存放到lib目录 下面
 
+3、开始编写index.html，采用标准的html5规范，导入应用需用的样式文件、定义script脚本加载requireJS文件,并且指明入口函数main.js。
+
+4、编写主函数入口文件main.js,,由requirejs异步载入所有文件。
+
+5、编写应用主文件app.js用来加载angular的控制器和指令。
+
+6、配置应用的全局依赖route.js。通过routeProvider提供了定义路由表的服务，它有两个核心方法，when(templateUrl:页面地址   ,controller:控制器   ,css:页面样式文件地址)和otherwise(params)方法对应路径匹配不到时的情况，这时候我们可以配置一个redirectTo参数，让它重定向到404页面或者是首页。
+
+7、规划整体应用的模块、布局以及相关组件和互相的依赖关系。
+</code></pre>
       
 
       
@@ -234,7 +254,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/12/29/搭建成功/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2016/12/29/angular+reuire搭建路由/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -248,7 +268,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2016/12/29/angular+reuire搭建路由/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/12/29/前端框架模式区别/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -257,6 +277,11 @@
       </div>
     </a>
   
+  
+    <a href="/2016/12/29/搭建成功/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

@@ -150,6 +150,96 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-前端框架模式区别" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>mvc   :<br>View 传送指令到 Controller<br>Controller (康戳啦)完成业务逻辑后，要求 M**odel 改变状态<br>Model 将新的数据发送到 View，用户得到反馈<br>所有通信都是单向的。</p>
+<p>mvp</p>
+<ol>
+<li>各部分之间的通信，都是双向的。</li>
+<li>View 与 Model 不发生联系，都通过 Presenter 传递。</li>
+<li>View 非常薄，不部署任何业务逻辑，称为”被动视图”(Passive View)，即没有任何主动性，而 Presenter非常厚，所有逻辑都部署在那里。</li>
+</ol>
+<p>mvvm<br>唯一的区别是，它采用双向绑定(data-binding)：View的变动，自动反映在 ViewModel，反之亦然。Angular都采用这种模式。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/29/前端框架模式区别/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-angular+reuire搭建路由" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>搭建angular+require搭建路由步骤<br>         1、新建一个webapp的文件夹，在其下面建好对应的文件夹，如lib、app.js、main.js、route.js 各个页面文件.入口主页面index.html。</p>
+<pre><code>2、准备好angular和require以及所需的插件源文件，存放到lib目录 下面
+
+3、开始编写index.html，采用标准的html5规范，导入应用需用的样式文件、定义script脚本加载requireJS文件,并且指明入口函数main.js。
+
+4、编写主函数入口文件main.js,,由requirejs异步载入所有文件。
+
+5、编写应用主文件app.js用来加载angular的控制器和指令。
+
+6、配置应用的全局依赖route.js。通过routeProvider提供了定义路由表的服务，它有两个核心方法，when(templateUrl:页面地址   ,controller:控制器   ,css:页面样式文件地址)和otherwise(params)方法对应路径匹配不到时的情况，这时候我们可以配置一个redirectTo参数，让它重定向到404页面或者是首页。
+
+7、规划整体应用的模块、布局以及相关组件和互相的依赖关系。
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/29/angular+reuire搭建路由/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-搭建成功" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
